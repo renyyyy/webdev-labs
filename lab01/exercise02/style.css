@@ -11,14 +11,68 @@ Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
 */
 
+img {
+    max-width: 100%;
+}
+
+section {
+    box-sizing: border-box;
+    border: solid 3px #CCC; 
+    width: 55vh;
+    height: 80vh;   
+    /* padding: 0px; */
+    margin: 10px;
+}
+
+h2, p {
+    padding: 10px;
+    margin: 10px;
+}
+
+h2 {
+    font-family: 'BIZ UDPMincho', serif;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+button {
+   margin: 20px; 
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards section {
+    width: 33.3%;
+    box-sizing: border-box;
+}
+
+.cards section div {
+    padding: 20px;
+    margin: 30px 0px 0px 30px;
+    border: dotted 1px #CCC;
+}
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
-
+    .cards article {
+        width: 50%;
+   }
+    .cards article div {
+        margin: 20px 0px 0px 20px;
+   }
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
-
-    
+    .cards article {
+        width: 100%;
+   }
+    .cards article div {
+        margin: 10px 0px 0px 10px;
+   }
 }
